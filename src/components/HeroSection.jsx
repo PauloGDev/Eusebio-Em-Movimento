@@ -39,7 +39,7 @@ export default function HeroSection() {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?auto=format&fit=crop&w=1800&q=80"
+          src="/hero.jpg"
           alt="Cidade de Eusébio"
           className="h-full w-full object-cover"
         />

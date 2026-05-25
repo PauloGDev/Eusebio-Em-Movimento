@@ -179,82 +179,41 @@ export default function VideoSection() {
           </motion.div>
 
           {/* Video */}
-          <motion.div variants={item} className="mt-14">
-            <div
-              className="
-                group relative overflow-hidden rounded-[32px]
-                border border-slate-200
-                bg-white
-                p-2
-                shadow-[0_32px_64px_-16px_rgba(15,23,42,0.12)]
-                transition duration-500
+<motion.div variants={item} className="mt-14">
+  <div
+    className="
+      group relative overflow-hidden rounded-[32px]
+      border border-slate-200
+      bg-white
+      p-2
+      shadow-[0_32px_64px_-16px_rgba(15,23,42,0.12)]
+      transition duration-500
 
-                hover:shadow-[0_40px_80px_-12px_rgba(22,101,52,0.14)]
-              "
-            >
-              <div className="relative aspect-video overflow-hidden rounded-[24px] bg-slate-100">
-                {/* Image */}
-                <motion.img
-                  src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1800&q=80"
-                  alt="Vídeo institucional"
-                  className="h-full w-full object-cover transition-transform duration-700 ease-out group-hover:scale-[1.03]"
-                />
+      hover:shadow-[0_40px_80px_-12px_rgba(22,101,52,0.14)]
+    "
+  >
+    <div className="relative aspect-video overflow-hidden rounded-[24px] bg-slate-100">
+      <video
+        src="/video.mp4"
+        muted
+        loop
+        playsInline
+        controls
+        className="h-full w-full object-cover"
+      />
 
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-black/25 transition-colors duration-500 group-hover:bg-black/35" />
+      {/* Overlay */}
+      <div className="pointer-events-none absolute inset-0 bg-black/10" />
+    </div>
 
-                {/* Play */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <motion.button
-                    whileHover="hover"
-                    whileTap="tap"
-                    className="
-                      relative flex items-center justify-center
-                      transition-colors
-
-                    "
-                  >
-                    {/* Pulse */}
-                    <motion.div
-                      variants={{
-                        hover: { scale: 1.3, opacity: 0 },
-                        tap: { scale: 1 },
-                      }}
-                      transition={{
-                        repeat: Infinity,
-                        duration: 1.5,
-                        ease: "easeOut",
-                      }}
-                      className="pointer-events-none absolute inset-0 rounded-full bg-[#22C55E]/30"
-                    />
-
-                    <motion.div
-                      variants={{
-                        hover: { scale: 1.06 },
-                        tap: { scale: 0.95 },
-                      }}
-                      transition={{
-                        type: "spring",
-                        stiffness: 400,
-                        damping: 25,
-                      }}
-                      className="flex items-center justify-center"
-                    >
-                      <Play className="ml-1.5 h-9 w-9 fill-current" />
-                    </motion.div>
-                  </motion.button>
-                </div>
-              </div>
-
-              {/* Bottom */}
-              <div className="px-6 py-5 sm:px-8">
-                <p className="text-sm font-medium text-slate-600 transition-colors duration-300 group-hover:text-[#166534]">
-                  Mobilidade, infraestrutura e desenvolvimento urbano em um só
-                  plano.
-                </p>
-              </div>
-            </div>
-          </motion.div>
+    {/* Bottom */}
+    <div className="px-6 py-5 sm:px-8">
+      <p className="text-sm font-medium text-slate-600 transition-colors duration-300 group-hover:text-[#166534]">
+        Mobilidade, infraestrutura e desenvolvimento urbano em um só plano.
+      </p>
+    </div>
+  </div>
+</motion.div> 
         </motion.div>
       </div>
     </section>

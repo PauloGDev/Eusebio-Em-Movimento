@@ -11,7 +11,7 @@ import {
 const eixos = [
   {
     icon: Handshake,
-    title: "Captação de Recursos e Parcerias",
+    title: "Parcerias e Prospecções",
     text: "Mobilização de investimentos e parcerias estratégicas.",
   },
   {

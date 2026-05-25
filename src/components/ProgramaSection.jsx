@@ -1,5 +1,12 @@
 import { motion } from "framer-motion";
-import { Users, ShieldCheck, MapPinned, ArrowUpRight } from "lucide-react";
+import {
+  Users,
+  ShieldCheck,
+  MapPinned,
+  ArrowUpRight,
+  BusFront,
+  Bike,
+} from "lucide-react";
 
 const container = {
   hidden: {},
@@ -25,7 +32,7 @@ const item = {
 const highlights = [
   {
     icon: MapPinned,
-    title: "Mobilidade planejada",
+    title: "Planejamento integrado",
     text: "Soluções sustentáveis, acessíveis e eficientes desenhadas para o futuro da cidade.",
   },
   {
@@ -35,8 +42,8 @@ const highlights = [
   },
   {
     icon: Users,
-    title: "Participação social",
-    text: "Construído de forma transparente com consultas públicas e diálogo com a comunidade.",
+    title: "Participação da população",
+    text: "A opinião da população será fundamental por meio de formulário online com sugestões sobre mobilidade urbana.",
   },
 ];
 
@@ -60,8 +67,12 @@ export default function ProgramaSection() {
           {/* COLUNA ESQUERDA */}
           <div className="space-y-8">
             <motion.div variants={item} className="space-y-4">
+              <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[#166534]">
+                Eusébio em Movimento
+              </p>
+
               <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl lg:text-5xl lg:leading-[1.15]">
-                Um compromisso com a transformação da mobilidade
+                Um programa para transformar a mobilidade urbana de Eusébio
               </h2>
             </motion.div>
 
@@ -73,9 +84,9 @@ export default function ProgramaSection() {
                 pl-4 text-xl font-medium leading-relaxed text-slate-800
               "
             >
-              Lançado em 26 de maio, o programa representa o compromisso da
-              Prefeitura Municipal em revolucionar a forma como os eusebienses
-              se deslocam, promovendo soluções integradas e sustentáveis.
+              Criado pela Prefeitura de Eusébio, o programa tem como propósito
+              revolucionar a forma como os eusebienses se deslocam, promovendo
+              soluções integradas e sustentáveis para toda a cidade.
             </motion.p>
 
             {/* Conteúdo */}
@@ -89,28 +100,31 @@ export default function ProgramaSection() {
             >
               <div className="space-y-4">
                 <p>
-                  Com foco em{" "}
+                  O trabalho foi estruturado para ser executado em{" "}
                   <strong className="font-semibold text-[#166534]">
-                    6 eixos estratégicos
+                    curto, médio e longo prazo
                   </strong>
-                  , a iniciativa busca integrar diferentes modais de transporte,
-                  melhorar a infraestrutura urbana e criar um ambiente mais
-                  seguro.
+                  , com ações planejadas para atender às necessidades atuais e
+                  preparar, de forma consistente, o futuro da mobilidade urbana
+                  no município.
                 </p>
 
                 <p>
-                  A mobilidade urbana é fundamental para o desenvolvimento
-                  econômico e social. O plano garante que todos tenham acesso a
-                  deslocamentos rápidos, independentemente de renda ou
-                  capacidade física.
+                  A proposta reúne visão técnica, planejamento urbano e
+                  compromisso com o desenvolvimento da cidade, buscando soluções
+                  mais eficientes, seguras e sustentáveis para todos.
                 </p>
               </div>
 
               <div className="space-y-4">
                 <p>
-                  Este programa é o resultado prático de estudos técnicos
-                  profundos e diálogos com a comunidade. Sua implementação será
-                  gradual, unindo ações de resposta rápida a obras estruturais.
+                  O programa está organizado em{" "}
+                  <strong className="font-semibold text-[#166534]">
+                    6 eixos de atuação
+                  </strong>
+                  : Parcerias e Prospecções, Desenho Urbano e Engenharia,
+                  Mobilidade Ativa, Transporte Público, Plano de Mobilidade
+                  Urbana e Recomendações Estruturantes.
                 </p>
 
                 <p
@@ -121,10 +135,11 @@ export default function ProgramaSection() {
                   "
                 >
                   <span className="font-semibold text-[#166534]">
-                    A sua voz importa:
+                    Participação popular:
                   </span>{" "}
-                  A participação da população com sugestões e ideias é essencial
-                  para o aprimoramento contínuo das ações.
+                  o projeto contará com formulário online para envio de
+                  sugestões, unindo o olhar especializado ao sentimento de quem
+                  vive a cidade todos os dias.
                 </p>
               </div>
             </motion.div>
@@ -214,13 +229,13 @@ export default function ProgramaSection() {
               <div className="absolute top-0 right-0 h-16 w-16 rounded-bl-full bg-[#166534]/5" />
 
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#166534]">
-                Foco contínuo e Dinâmico
+                Desenvolvimento contínuo
               </p>
 
               <p className="mt-3 text-sm leading-relaxed text-slate-700">
-                A construção do programa evolui junto com a cidade,
-                adaptando-se constantemente às novas demandas de crescimento e
-                infraestrutura de Eusébio.
+                Com planejamento, escuta da população e ações estruturantes, o
+                Eusébio em Movimento fortalece a jornada de desenvolvimento da
+                cidade.
               </p>
             </motion.div>
           </div>
