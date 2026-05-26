@@ -203,7 +203,7 @@ export default function VideoSection() {
       />
 
       {/* Overlay */}
-      <div className="pointer-events-none absolute inset-0 bg-black/10" />
+      <div className="pointer-events-none absolute inset-0 bg-black/10" />n
     </div>
 
     {/* Bottom */}

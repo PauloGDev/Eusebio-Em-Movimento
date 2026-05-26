@@ -13,29 +13,17 @@ export default function Footer() {
         <div className="grid gap-14 lg:grid-cols-[1.2fr_0.8fr_1fr]">
           {/* Coluna 1 */}
           <div className="max-w-md">
-            <div className="inline-flex items-center gap-3">
-              <div
-                className="
-                  flex h-11 w-11 items-center justify-center
-                  rounded-2xl
-                  bg-[#166534]
-                  text-sm font-semibold text-white
-                  shadow-[0_8px_20px_rgba(22,101,52,0.18)]
-                "
-              >
-                EM
-              </div>
+            <div className="space-y-4">
+  <img
+    src="/EUSEB-MOVcor horizont.png"
+    alt="Eusébio em Movimento"
+    className="h-16 w-auto object-contain"
+  />
 
-              <div>
-                <h3 className="text-lg font-semibold">
-                  Eusébio em Movimento
-                </h3>
-
-                <p className="text-sm text-slate-500">
-                  Prefeitura Municipal de Eusébio
-                </p>
-              </div>
-            </div>
+  <p className="text-sm text-slate-500">
+    Prefeitura Municipal de Eusébio
+  </p>
+</div>
 
             <p className="mt-6 text-sm leading-7 text-slate-600">
               Programa voltado à transformação da mobilidade urbana,

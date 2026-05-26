@@ -60,32 +60,19 @@ const Navbar = () => {
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.15, duration: 0.5 }}
                 className={`
-                  flex h-12 w-12 items-center justify-center rounded-xl border transition-all duration-300
-                  ${
-                    scrolled
-                      ? "border-slate-200 bg-white"
-                      : "border-white/15 bg-white/10 group-hover:bg-white/14"
-                  }
+                  flex w-full items-center justify-center transition-all duration-300
                 `}
               >
                 <img
-                  src="/logo.svg"
+                  src={
+                    scrolled
+                      ? "/EUSEB-MOVcor horizont.png"
+                      : "/EUSEB-MOVbranca horizont.png"
+                  }
                   alt="Eusébio em Movimento"
-                  className="h-9 w-9 object-contain"
+                  className="h-20 w-full object-contain transition-all duration-300"
                 />
               </motion.div>
-
-              <div className="leading-tight text-left">
-                <h1
-                  className={`
-                    text-sm font-semibold tracking-tight transition-colors duration-300 sm:text-base lg:text-lg
-                    ${scrolled ? "text-slate-900" : "text-white"}
-                  `}
-                >
-                  <span className="block">Eusébio em</span>
-                  <span className="block">Movimento</span>
-                </h1>
-              </div>
             </button>
 
             {/* Desktop */}
